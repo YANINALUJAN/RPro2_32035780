@@ -1,0 +1,140 @@
+Registro
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+/* Estilo para el párrafo */
+        p {
+            color:rgb(180, 27, 91) (255, 153, 0) (4, 0, 255); /* Cambia el color del texto a azul */
+        }
+    </style>
+     <!-- Enlace al archivo CSS externo -->
+     <link rel="stylesheet" type="text/css" href="miestilo.css"></head>
+<body>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="Index.html">INICIO</a> 
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <li><a class="dropdown-item" href="#">Action</a></li>
+                 <li><a class="dropdown-item" href="#">Another action</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#">Something else here</a></li>
+               </ul>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+             </li>
+           </ul>
+           <form class="d-flex">
+             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success" type="submit">Search</button>
+           </form>
+         </div>
+       </div>
+     </nav>
+     <img src="imagenPrueba.jpg" alt="Somos Formi Limpieza" class="logo">
+        <nav>
+            <ul>
+                <!-- Enlaces a páginas externas -->
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.google.com">Google</a></li>
+            <li><a href="https://www.yahoo.com">Yahoo</a></li>
+            <li><a href="https://talentosdigitales.ar/">Talentos Digitales</a></li>
+        </ul>
+    </nav>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group button {
+            background-color: #1fe60d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        /* Estilo específico para el botón de "Cancelar" */
+        .form-group button.cancelar {
+            background-color: #dc3545; /* Color rojo */
+            color: #fff; /* Texto blanco */
+        }
+        /* Cambiar el color del texto del botón de "Cancelar" al pasar el mouse sobre él */
+        .form-group button.cancelar:hover {
+            background-color: #c82333; /* Color rojo más oscuro */
+        }
+    </style>
+    <script>
+        function validarMayusculas(input) {
+            var valor = input.value;
+            var valorMayusculas = valor.toUpperCase();
+            if (valor !== valorMayusculas) {
+                input.value = valorMayusculas;
+            }
+        }
+        </script>
+</head>
+<body>
+    <form action="registro.php" method="post">
+        <div class="form-group">
+            <div style="text-align: center;">
+                <p>REGISTRO DE USUARIOS</p>
+              </div>
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" oninput="validarMayusculas(this)" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Cuit/Cuil:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Registrarse</button>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-danger cancelar">Cancelar</button>
+        </div>
+    </form>
+    <div class="footer-botton">
+        <footer>
+       ©Copyright 2024 by Empresa Formi. Todos los derechos reservados
+     </footer>
+</body>
+</html>
